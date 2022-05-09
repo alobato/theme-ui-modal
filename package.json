@@ -1,0 +1,45 @@
+{
+  "name": "theme-ui-modal",
+  "version": "1.0.0",
+  "description": "Theme UI React modal",
+  "repository": "github:alobato/theme-ui-modal",
+  "author": "alobato",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "modal",
+    "theme-ui"
+  ],
+  "bugs": {
+    "url": "https://github.com/alobato/theme-ui-modal/issues"
+  },
+  "homepage": "https://github.com/alobato/theme-ui-modal#readme",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.js --format esm,cjs --external react",
+    "dev": "tsup src/index.js --format esm,cjs --watch --external react"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "react": "^18.1.0",
+    "tsup": "^5.12.6"
+  },
+  "dependencies": {
+    "@emotion/css": "11.9.0",
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@react-spring/web": "9.4.4",
+    "@theme-ui/css": "0.14.4",
+    "@theme-ui/match-media": "0.14.4",
+    "react-dom": "^18.1.0"
+  }
+}
